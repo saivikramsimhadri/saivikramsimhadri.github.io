@@ -140,6 +140,7 @@
   display: flex;
   background-color: grey;
   padding: 20px;
+  align-items: center;
 
   /* Horizontally center the content */
 }
@@ -162,10 +163,10 @@
 .info {
   background-color: #ffffff;
   display: flex;
-  flex-wrap: wrap;
-
   padding: 20px;
   margin: 20px;
+  flex-direction: column;
+  height: max-content;
 }
 icons {
   display: flex;
@@ -184,4 +185,69 @@ icons {
   color: #fff; /* Change text color on hover */
   transform: scale(1.05); /* Add a slight scale effect on hover */
   border-color: #000000; /* Change border color on hover */
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* .topnav a.active {
+  background-color: #04aa6d;
+  color: white;
+} */
+
+@media only screen and (max-width: 900px) {
+  .second-main {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .centered-image {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+
+  .topnav a {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .topnav.responsive {
+    position: relative;
+    display: block;
+  }
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
 }

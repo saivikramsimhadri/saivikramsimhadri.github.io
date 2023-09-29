@@ -8,3 +8,12 @@ document.addEventListener("DOMContentLoaded", function () {
     nameElement.textContent = names[currentIndex];
   }, 2000); // Change content every 2 seconds (2000 milliseconds)
 });
+
+function myFunction() {
+  var x = document.getElementById("topnav");
+  if (!x.className.includes("responsive")) {
+    x.className += " responsive";
+  } else {
+    x.className = "nav topnav";
+  }
+}
