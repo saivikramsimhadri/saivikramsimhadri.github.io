@@ -170,6 +170,7 @@
 }
 icons {
   display: flex;
+
   padding: 10px 20px; /* Adjust padding as needed */
   background-color: #ffffff; /* Set background color */
   color: #000000; /* Set text color */
