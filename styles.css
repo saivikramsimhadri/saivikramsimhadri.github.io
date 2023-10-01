@@ -20,6 +20,30 @@
 
   display: flex;
   margin-top: 100px;
+  margin-left: 10px;
+}
+
+h1 {
+  letter-spacing: 0.1em;
+}
+h1 span {
+  display: inline-block;
+  animation: animate 1s linear forwards;
+}
+@keyframes animate {
+  0% {
+    opacity: 0;
+    transform: rotateY(0deg);
+    filter: blur(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: rotateY(0deg);
+    filter: blur(0px);
+  }
+}
+.right-main {
+  margin-left: 100px;
 }
 /* Add initial styles for the name */
 /* Add initial styles for the name */
@@ -49,6 +73,9 @@
   }
 }
 .btn {
+  position: relative;
+  top: 150px;
+  left: 100px;
   padding: 10px 20px; /* Adjust padding as needed */
   background-color: #ffffff; /* Set background color */
   color: #000000; /* Set text color */
@@ -105,18 +132,24 @@
   max-width: 50%;
   flex-wrap: wrap;
 }
+
 .icons {
   display: flex;
   justify-content: space-evenly;
 }
+.icons a:visited {
+  color: inherit;
+}
+
 .fa {
   cursor: pointer; /* Change cursor on hover */
   transition: background-color 0.3s;
 }
 .fa:hover {
+  padding: 5px;
   background-color: #000000; /* Change background color on hover */
   color: #fff; /* Change text color on hover */
-  transform: scale(1.05); /* Add a slight scale effect on hover */
+  /* transform: translate(1);  */
   border-color: #000000;
 }
 
@@ -137,6 +170,7 @@
 .topnav a:hover {
   background-color: #000000;
   color: white;
+  border-radius: 50px;
 }
 
 /* .topnav a.active {
