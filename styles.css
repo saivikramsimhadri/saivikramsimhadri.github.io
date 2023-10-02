@@ -199,49 +199,6 @@ h1 span {
   background-color: #04aa6d;
   color: white;
 } */
-@media only screen and (max-width: 900px) {
-  .main {
-    flex-direction: column;
-  }
-
-  .info {
-    height: max-content;
-  }
-
-  .second-main {
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-
-  .centered-image {
-    display: flex;
-    justify-content: center;
-  }
-
-  .topnav a.icon {
-    float: right;
-    display: block;
-  }
-
-  .topnav a {
-    display: none;
-  }
-
-  .topnav.responsive {
-    display: block;
-  }
-  .topnav.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .topnav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-}
 
 .checked {
   background-color: #000000;
