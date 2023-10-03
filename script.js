@@ -17,3 +17,42 @@ function myFunction() {
     x.className = "nav topnav";
   }
 }
+
+// SKILLS BAR
+var bars = document.querySelectorAll(".progress-bar");
+var options = {
+  root: null,
+  rootmargin: "0",
+  threshold: 0.2,
+};
+
+var observer = new IntersectionObserver((entries, observer) => {
+  entries.forEach((entry) => {
+    if (!entry.isIntersecting) {
+      return;
+    }
+    entry.target.style.width = entry.target.getAttribute("data-width") + "%";
+    observer.unobserve(entry.target);
+  });
+}, options);
+
+bars.forEach((bar) => {
+  observer.observe(bar);
+});
+
+var observer2 = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (!entry.isIntersecting) {
+      return;
+    }
+    entry.target.style.opacity = 1;
+    entry.target.style.top = 0;
+    observer2.unobserve(entry.target);
+  });
+}, options);
+
+var abouts = document.querySelectorAll(".lazy-load");
+
+abouts.forEach((about) => {
+  observer2.observe(about);
+});
