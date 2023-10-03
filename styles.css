@@ -53,7 +53,7 @@ img {
   -webkit-animation: reveal 1s forwards;
   animation: reveal 1s forwards;
   -webkit-animation-delay: 500ms;
-  animation-delay: 500ms;
+  animation-delay: 1000ms;
   z-index: 0;
 }
 @keyframes reveal {
@@ -224,7 +224,8 @@ img {
 .topnav a:hover {
   background-color: #000000;
   color: white;
-  border-radius: 50px;
+
+  /* border-radius: 20px; */
 }
 
 /* .topnav a.active {
@@ -256,7 +257,7 @@ img {
   padding-bottom: 50px;
 }
 
-.skills-container {
+.skill-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -266,7 +267,7 @@ img {
 }
 
 @media screen and (max-width: 768px) {
-  .skills-container {
+  .skill-container {
     grid-template-columns: auto;
   }
 }
@@ -279,7 +280,7 @@ img {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 30% auto;
-  grid-template-columns: 30% auto;
+  /* grid-template-columns: 30% auto; */
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
