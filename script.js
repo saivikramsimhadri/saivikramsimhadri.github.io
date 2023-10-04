@@ -56,3 +56,15 @@ var abouts = document.querySelectorAll(".lazy-load");
 abouts.forEach((about) => {
   observer2.observe(about);
 });
+
+var parentNav = document.getElementById("parent-nav");
+
+parentNav.onclick = function (evt) {
+  var x = document.getElementById("topnav");
+  if (
+    x.className.includes("responsive") &&
+    evt.target.className === "menu-item"
+  ) {
+    x.className = "nav topnav";
+  }
+};

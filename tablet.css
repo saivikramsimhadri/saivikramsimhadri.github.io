@@ -13,14 +13,24 @@
     flex-direction: column;
   }
 
+  .nav.topnav {
+    height: 100px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+  }
+
   .centered-image {
     display: flex;
     justify-content: center;
   }
 
   .topnav a.icon {
-    float: right;
-    display: block;
+    display: flex;
+    height: 45px;
+    width: 45px;
+    justify-content: center;
+    align-items: center;
   }
 
   .topnav a {
@@ -28,16 +38,24 @@
   }
 
   .topnav.responsive {
-    display: block;
-  }
-  .topnav.responsive .icon {
     position: absolute;
     right: 0;
-    top: 0;
+    top: 25px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid;
+    justify-content: initial;
+    height: fit-content;
+  }
+  .topnav.responsive .icon {
+    display: flex;
+    align-self: flex-end;
   }
   .topnav.responsive a {
-    float: none;
     display: block;
-    text-align: left;
+  }
+
+  .topnav.responsive a.menu-item {
+    width: 100%;
   }
 }
