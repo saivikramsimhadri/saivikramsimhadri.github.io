@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Set the href and download attributes
     anchor.href = pdfFileUrl;
-    anchor.download = "Resume"; // Set the desired filename
+    anchor.download = "SaiVikram's Resume"; // Set the desired filename
 
     // Trigger a click event on the anchor element
     document.body.appendChild(anchor);
