@@ -50,7 +50,7 @@ img {
 }
 
 .main {
-  /* margin-top: 45px; */
+  margin-top: 100px;
 
   display: flex;
   justify-content: space-evenly;
@@ -245,6 +245,13 @@ img {
 
   /* border-radius: 20px; */
 }
+.heading {
+  font-size: 10rem;
+  position: absolute;
+  transform: translateY(-50%);
+  right: 20%;
+  color: black;
+}
 
 /* .topnav a.active {
   background-color: #04aa6d;
@@ -254,6 +261,18 @@ img {
 .checked {
   background-color: #000000;
   color: #ffffff;
+}
+.head {
+  position: relative;
+  font-size: 10rem;
+  top: 7rem;
+  left: 0;
+}
+.head {
+  color: black;
+  display: flex;
+  padding-left: 20%;
+  background-color: var(--color-gray);
 }
 #skills {
   height: 15rem;
@@ -353,7 +372,7 @@ img {
   position: absolute;
   transform: translateY(-50%);
   right: 20%;
-  color: grey;
+  color: black;
 }
 
 @media (max-width: 768px) {
@@ -447,7 +466,7 @@ img {
 }
 
 #contact2 {
-  color: gray;
+  color: black;
   display: flex;
   padding-left: 20%;
   background-color: var(--color-gray);
